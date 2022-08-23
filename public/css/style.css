@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0e212c;
+    color:rgb(176, 198, 175);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+h1{
+    color: #5faf6a;
+}
+
+.todoTime {
+    color: rgb(176, 198, 175);
+}
+.completed{
+    color: gray;
+    text-decoration: line-through;
+}
+
+.display {
+    border: 1px solid ivory;
+    text-align: center;
+    max-width: 40rem;
+    padding: 1em;
+}
+
+
+.container {
+    border: 1px solid ivory;
+    display: grid;
+    place-items: center;
+    max-width: 40rem;
+    text-align: center;
+    padding: 1em;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+   
+.row {
+    width: 30em;
+    height: 1.5em;
+    border: none;
+    padding: 0.3em;
+    border-radius: 0.2em;
+    background: #82927c;
+    color: white;
+    margin-right: 0.4em;
+    margin-bottom: 1em;
+}
+    
+    
+
+.time-slot {
+   background: #8f974e;
+   border: none;
+    padding: 0.45em 0.5em;
+    border-radius: 0.2em;
+    width: 8em;
+    margin-bottom: 1em;
+    margin-right: 0.4em;
+ 
+}
+
+.btn {
+    border: none;
+    padding: 0.45em 0.9em;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+.form-row {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+.fa-trash:hover {
+    color: yellow;
+}
+.fa-plus:hover {
+    color: yellow;
+}
+
+.task-box {
+    border: 1px solid green;
+}
+
+.time-box {
+    /* border: 1px solid red; */
+}
+.item {
+    margin-bottom: 0.5em;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+}

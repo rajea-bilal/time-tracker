@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-tracker</title>
+</head>
+<body>
+
+    <section class="container">
+        <h1>Track Your Time </h1>
+     
+
+        <h2>Add your Activity</h2>
+    
+        <form action="/addTodo" method="POST" class="form-row">
+            <!-- <span class="time-window">5:00 - 6:00 AM</span> -->
+            <input type="text" placeholder="10 mins" name="timeWindow" class="time-slot">
+            <input type="text" placeholder="Thing To Do" name="todoTime" class="row">
+            <input type="submit" class="btn">
+        </form>
+    </section>
+
+        <section class="display">
+            <ul class="todoTime">
+                <% for(let i=0; i < tasks.length; i++) {%>
+                    <li class="item">
+                        <% if(tasks[i].completed === true) {%>
+                            <span class='completed'><%= tasks[i].thing %></span>
+                        <% }else{ %>
+                            <div class="task-box">
+                                <span><%= tasks[i].thing %></span>
+                            </div>
+                            <div class="time-box">
+                                <span><%= tasks[i].time %></span>
+                                <span class='fa fa-plus'></span>
+                                <!-- <span class='fa fa-trash'></span> -->
+                            </div>
+                            <div class="calculate-box">
+                                <span><%= tasks[i].time %></span>
+                            </div>
+                            <% } %>    
+                        </li>
+                    <% } %>
+                    </ul>
+            </section>
+
+
+
+
+   
+    <script src='js/main.js'></script>
+</body>
+</html>
+
+        
+        
+        
+
+
+
+
+
+
+
+  
+
